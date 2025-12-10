@@ -155,7 +155,7 @@ Um agradecimento a todos os dev que usaram minha ferramenta, ela e simples porem
 
 ```bash
 
-esac
+
 ```
 
 
