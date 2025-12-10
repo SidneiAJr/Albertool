@@ -1,6 +1,6 @@
 # 📜 Licença Personalizada – Uso Não Comercial / Modificação Permitida
 
-Copyright (c) 2025 – Albertool / Sidnei A. Jr.
+Copyright (c) 2025 – Albertool.
 
 Estes scripts foram desenvolvidos com cuidado e dedicação para ajudar outros desenvolvedores Web.
 Eles são disponibilizados gratuitamente para estudo, aprendizado e melhorias pela comunidade.
