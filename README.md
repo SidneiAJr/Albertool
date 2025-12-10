@@ -4,7 +4,7 @@
 
 ## Propósito do Repositório:
 
-`Este repositório tem como objetivo guardar e compartilhar o conhecimento adquirido ao longo da vida, com o intuito de ajudar outras pessoas que buscam aprendizado em diversas áreas. Se você está em busca de informações, curiosidades ou quer explorar temas variados, fique à vontade para navegar e aprender. Espero que este conteúdo seja útil para sua jornada de aprendizado, assim como foi para a minha.`
+`Este repositório tem como objetivo fornecer soluções para automação de projetos e oferecer suporte geral para facilitar o desenvolvimento e a colaboração`
 
 
 ## `Linguagens Disponiveis`:
