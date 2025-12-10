@@ -1,20 +1,44 @@
-# Licença Creative Commons - Atribuição-NãoComercial 4.0 Internacional (CC BY-NC 4.0)
+# 📜 Licença Personalizada – Uso Não Comercial / Modificação Permitida
 
-Este conteúdo está licenciado sob a **Licença Creative Commons - Atribuição-NãoComercial 4.0 Internacional (CC BY-NC 4.0)**. Você pode:
+Copyright (c) 2025 – Albertool / Sidnei A. Jr.
 
-- **Compartilhar** — copiar e redistribuir o material em qualquer meio ou formato.
-- **Adaptar** — remixer, transformar e construir a partir do material, **mas somente para fins não comerciais**.
+Estes scripts foram desenvolvidos com cuidado e dedicação para ajudar outros desenvolvedores Web.
+Eles são disponibilizados gratuitamente para estudo, aprendizado e melhorias pela comunidade.
 
-## Sob as seguintes condições:
+Ao usar este repositório, você concorda com os seguintes termos:
 
-- **Atribuição**: Você deve dar o crédito adequado ao autor original. A forma de atribuição deve ser razoável e não pode sugerir que você tem o apoio do autor ou que o material é utilizado para fins comerciais.
-  
-- **Não Comercial**: O material **não pode ser usado para fins comerciais** de nenhuma forma.
+✔ Permissões
 
-## Aviso Importante sobre Forks e Contribuições:
+Você pode:
 
-Este repositório está disponível para estudo e uso pessoal. **Se você deseja fazer um fork deste projeto, por favor, avise o autor antes de começar**. Contribuições, sugestões e críticas construtivas são bem-vindas, e agradecemos sua colaboração!
+Ler e utilizar o código para estudo e fins pessoais.
 
-**Não é permitido** vender ou lucrar com o conteúdo deste repositório de qualquer maneira. O uso do material de forma contrária aos termos desta licença será considerado uma violação.
+Fazer fork.
 
-A licença completa está disponível em: [https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
+Modificar, melhorar e criar suas próprias versões.
+
+Compartilhar suas versões modificadas desde que não seja para fins comerciais.
+
+Dar crédito ao autor original ao reutilizar o conteúdo.
+
+# ❌ Restrições
+
+É estritamente proibido:
+
+Vender, revender, alugar, licenciar ou usar este conteúdo para qualquer fim comercial.
+
+Incluir este código em produtos pagos ou serviços monetizados.
+
+Utilizar o nome do autor para promover projetos derivados sem autorização.
+
+Copiar e redistribuir o conteúdo com propósito lucrativo.
+
+Qualquer tentativa de uso comercial não autorizado pode resultar em medidas legais conforme as leis de direitos autorais vigentes.
+
+# 🔒 Observações Importantes
+
+Este projeto não possui garantias — use por sua conta e risco.
+
+Derivações devem manter esta mesma restrição de uso não comercial.
+
+Respeite o esforço e o propósito educativo para o qual esses scripts foram criados.
