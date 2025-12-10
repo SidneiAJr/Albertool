@@ -61,7 +61,7 @@ $ErrorActionPreference = "SilentlyContinue"
 function Show-Menu {
     Clear-Host
     Write-Host "============================================="
-    Write-Host "        HYDRO RS - WINDOWS TOOLKIT"
+    Write-Host "       WINDOWS TOOLKIT"
     Write-Host "============================================="
     Write-Host "1) Debloat Windows (Hardcore)"
     Write-Host "2) Restaurar Apps Essenciais"
