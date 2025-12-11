@@ -1,162 +1,95 @@
-# 🚀 Constellation Supreme CLI — Documentação Oficial | Ainda Não Operacional 🏗️
+# 🚀 Constellation Supreme CLI — Documentação Oficial
+Foco: Angular + Backend (JS/TS/PHP)
+Criado no Brasil 🇧🇷 para o mundo.
 
-### Constellation Supreme CLI — Criado no Brasil 🇧🇷 para o mundo.
-
-Bem-vindo à documentação técnica da Constellation Supreme — Developer Automation CLI.
-
-Esta ferramenta foi criada para auxiliar desenvolvedores na geração automática de estruturas completas de projetos Web, Mobile e Backend, utilizando tecnologias como Node.js, PHP, TypeScript, Angular, React, React Native (Expo) e Vanilla JS/PHP.
-
-Bem vindo/Welcom/Bien viendo
+Bem-vindo à documentação técnica da Constellation Supreme CLI, uma ferramenta automatizada para criação rápida de estruturas profissionais de projetos Web utilizando Angular no frontend e JS, TS ou PHP no backend.
 
 ## 📌 Sobre a Ferramenta
 
-A Constellation Supreme é um script shell automatizado que cria toda a base de um projeto profissional, com diretórios organizados, arquivos iniciais, exemplos de rotas, backend configurado e estruturas frontend prontas para desenvolvimento.
+A Constellation Supreme CLI é um script Shell focado em produtividade, permitindo criar projetos completos com organização profissional em segundos, sem instalações complexas.
 
-Ela foi projetada para ser:
-
-Rápida — Gera projetos completos em segundos.
-
-Simples — Totalmente baseada em Shell Script.
-
-Sem dependências extras — Requer apenas Git Bash ou qualquer terminal Linux / WSL.
-
-Modular — Escolha entre vários tipos de stack.
+- ✔ Simples — Apenas execute o script
+- ✔ Modular — Escolha o tipo de backend
+- ✔ Rápido — Estruturas prontas automaticamente
+- ✔ Automático — Instala dependências e configura o Angular CLI
 
 ## 📦 Requisitos
 
-Git instalado na máquina.
+Para executar corretamente:
 
-Node.js instalado (caso for usar stacks JS/TS/Angular/React/React Native).
-
-Angular CLI (instalada automaticamente quando necessário).
+- ✔ Git instalado
+- ✔ Node.js instalado
+- ✔ Angular CLI (será instalada automaticamente quando necessário)
 
 ## 📁 Estrutura Criada
-
-Dependendo da escolha do usuário, podem ser criados automaticamente:
-
-## 🟦 Backend
-
-controller/
-
-model/
-
-service/
-
-repository/
-
-middleware/
-
-entity/
-
-dto/
-
-config/
-
-helpers/
-
-utils/
-
-routes/
-
-public/
-
-tests/
-
-docs/
-
-Arquivos de configuração (.env, tsconfig.json, server.js etc.)
-
-## 🟨 Frontend
-
-Pode criar:
-
-Vanilla HTML/CSS/JS
-
-Angular
-
-React (Vite)
-
-React Native (Expo)
-
-Com páginas prontas para edição:
-
-index.html
-
-login.html
-
-register.html
-
-about.html
-
-products.html
-
-contact.html
-
-## 🟩 Dados de Teste
-
-JSON de teste
-
-SQL de criação de banco
-
-## Obrigado:
-
-Um agradecimento a todos os dev que usaram minha ferramenta, ela e simples porem muito funcional.
-- Se Possivel Aceito um café....
-
-## Para Usar:
-- Não Precisa Instalar Nada
-- Apenas ter o Git no PC
-- Depois de feito isso crie uma pasta na sua maquina
-- crie um documento de texto com botão direto do mouse
-- depois disso copie e cole o script abaixo
-- Depois de feito isso so click com botão esquerdo ele vai abrir direto no git ou vai perguntar se gostaria de abrir no git, so colocar `uma vez`
-
-## 📚 Funcionalidades do Script
-
-## Permite escolher:
-
-- MVC completo com Angular/React/Native
-
-- Vanilla (PHP / JS / TS)
-
-- Backend em JS, TS ou PHP
-
-- Criação Automática de Pastas
-
-- Organiza todo o projeto com uma estrutura profissional.
-
-- Gerador Backend (Node/PHP)
-
-- Cria controllers, models, rotas, serviços, middlewares e configs.
-
-- Gerador Frontend
-
-- Cria páginas base ou projetos completos com CLI oficial.
-
-## Instalação Automática de Dependências
-
-- Quando selecionado, instala bibliotecas como:
-
-- Express
-
-- TypeORM
-
-- Prisma
-
-- JWT
-
-- Bcrypt
-
-- Class Validator
-
-## Projetos Mobile (Expo)
-
-- Cria aplicativos React Native automaticamente com create-expo-app.
-
+A CLI cria automaticamente uma estrutura profissional contendo:
 ```bash
-
-
-
+Backend/
+ ├── app/
+ │   ├── controller/
+ │   ├── model/
+ │   ├── service/
+ │   ├── repository/
+ │   ├── middleware/
+ │   ├── entity/
+ │   ├── dto/
+ │   ├── config/
+ │   ├── helpers/
+ │   ├── utils/
+ │   └── routes/
+ ├── public/
+ ├── tests/
+ ├── scripts/
+ ├── docs/
+ ├── .env
+ └── .gitignore
 ```
 
+## 🟥 Frontend — Angular
+```bash
+Frontend_Angular/
+ ├── src/
+ │   ├── app/
+ │   ├── assets/
+ │   ├── environments/
+ └── angular.json
+ └── package.json
+```
 
+## 🟩 Dados de Teste
+São criados dados auxiliares:
+- ✔ JSON de Teste
+- ✔ SQL de criação de banco
+
+## 🙏 Agradecimento
+- Obrigado a todos os desenvolvedores que utilizam a Constellation Supreme CLI.
+- É simples, porém extremamente funcional e focada em produtividade.
+- Se possível, aceitei um café ☕ como forma de apoio — agradeço demais!
+
+## 📚 Como Usar
+- Crie uma pasta no seu computador.
+- Dentro dela, crie um arquivo de texto comum.
+- Cole o script completo fornecido no GitHub.
+- Salve com a extensão:
+- setup.sh
+- Clique com botão direito → Executar com Git Bash
+- Escolha as opções no menu e deixe a CLI trabalhar sozinha.
+
+## 🔧 Funcionalidades do Script
+- ✔ Sistema de menu interativo
+- ✔ Criação automática do backend (PHP / JS / TS)
+- ✔ Criação automática do frontend (Angular)
+- ✔ Instalação de dependências no backend
+- ✔ Estrutura organizada para projetos profissionais
+- ✔ Criação de arquivos base (controllers, services, models...)
+- ✔ Criação de JSON e SQL de teste
+
+## 📌 Tecnologias Suportadas
+- A CLI é compatível com:
+- Backend:
+- JavaScript (Node.js / Express)
+- TypeScript (Node.js / Express com TS)
+- PHP
+- Frontend:
+- Angular (CLI Oficial)
+- Nenhum outro frontend é criado nesta versão (React/Native removidos).
