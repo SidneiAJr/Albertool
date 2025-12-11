@@ -32,20 +32,19 @@
 - grades: Armazena as notas dos alunos nas disciplinas, com referência a student_id e subject_id.
 
 ### 5. Banco de Dados: Sistema de Saúde (Health System)
-Descrição: Banco de dados para um sistema de gestão de saúde, incluindo pacientes, médicos, consultas, diagnósticos e prescrições.
-Tabelas Criadas:
-patients: Armazena informações sobre os pacientes, como name, dob, gender, e contact_info.
-doctors: Armazena informações sobre os médicos, como name, specialty, e contact_info.
-appointments: Armazena informações sobre as consultas, com referências a patient_id e doctor_id.
-diagnoses: Armazena os diagnósticos realizados para os pacientes, incluindo patient_id e diagnosis_description.
-prescriptions: Armazena as prescrições médicas, com referência a appointment_id e informações sobre os medicamentos.
+- Descrição: Banco de dados para um sistema de gestão de saúde, incluindo pacientes, médicos, consultas, diagnósticos e prescrições.
+- Tabelas Criadas:
+- patients: Armazena informações sobre os pacientes, como name, dob, gender, e contact_info.
+- doctors: Armazena informações sobre os médicos, como name, specialty, e contact_info.
+- appointments: Armazena informações sobre as consultas, com referências a patient_id e doctor_id.
+- diagnoses: Armazena os diagnósticos realizados para os pacientes, incluindo patient_id e diagnosis_description.
+- prescriptions: Armazena as prescrições médicas, com referência a appointment_id e informações sobre os medicamentos.
 
 ### 6. Banco de Dados: Hotelaria (Hospitality)
-
-Descrição: Banco de dados para um sistema de gerenciamento de hotelaria, com informações sobre quartos, reservas, hóspedes e serviços do hotel.
-Tabelas Criadas:
-rooms: Armazena informações sobre os quartos do hotel, como room_number, room_type, price_per_night e status.
-guests: Armazena informações sobre os hóspedes, como name, email, phone e address.
-reservations: Armazena informações sobre as reservas feitas pelos hóspedes, com referência a guest_id e room_id.
-services: Armazena informações sobre os serviços oferecidos pelo hotel, como service_name e price.
-billing: Armazena informações de cobrança, incluindo os serviços consumidos durante a estadia e o valor total.
+- Descrição: Banco de dados para um sistema de gerenciamento de hotelaria, com informações sobre quartos, reservas, hóspedes e serviços do hotel.
+- Tabelas Criadas:
+- rooms: Armazena informações sobre os quartos do hotel, como room_number, room_type, price_per_night e status.
+- guests: Armazena informações sobre os hóspedes, como name, email, phone e address.
+- reservations: Armazena informações sobre as reservas feitas pelos hóspedes, com referência a guest_id e room_id.
+- services: Armazena informações sobre os serviços oferecidos pelo hotel, como service_name e price.
+- billing: Armazena informações de cobrança, incluindo os serviços consumidos durante a estadia e o valor total.
