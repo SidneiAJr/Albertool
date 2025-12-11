@@ -1,4 +1,4 @@
-# 🚀 Constellation Supreme CLI — Documentação Oficial
+# 🚀 Constellation Supreme CLI — Documentação Oficial | Ainda Não Operacional 🏗️
 
 ### Constellation Supreme CLI — Criado no Brasil 🇧🇷 para o mundo.
 
