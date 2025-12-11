@@ -48,3 +48,19 @@
 - reservations: Armazena informações sobre as reservas feitas pelos hóspedes, com referência a guest_id e room_id.
 - services: Armazena informações sobre os serviços oferecidos pelo hotel, como service_name e price.
 - billing: Armazena informações de cobrança, incluindo os serviços consumidos durante a estadia e o valor total.
+
+### 📚 Como Usar
+- Crie uma pasta no seu computador.
+- Dentro dela, crie um arquivo de texto comum.
+- Cole o script completo fornecido no GitHub.
+- Salve com a extensão:
+- setup.sh
+- Clique com botão direito → Executar com Git Bash
+- Escolha as opções no menu e deixe a CLI trabalhar sozinha.
+
+### ⚠ Observação importante
+`Este software foi desenvolvido para ajudar outros desenvolvedores Web, de forma totalmente gratuita.
+É expressamente proibido vender, revender, comercializar ou lucrar de qualquer forma com este conteúdo.`
+### 🐞 Encontrou algum bug?
+`Se você achar qualquer erro, bug ou algo quebrado, por favor me avise!
+Seu feedback ajuda a melhorar o projeto e manter tudo funcionando para todos. 🙏`
