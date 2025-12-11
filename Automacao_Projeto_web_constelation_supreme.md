@@ -94,6 +94,7 @@ São criados dados auxiliares:
 - Angular (CLI Oficial)
 - Nenhum outro frontend é criado nesta versão (React/Native removidos).
 
+## Script:
 ```bash
 #!/bin/bash
 
