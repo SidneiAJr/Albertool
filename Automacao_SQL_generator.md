@@ -146,18 +146,11 @@ create_data_base_company(){
         ('J', 'Salvador', 'Brasil', 'Informações do João', 'senha456', 'joao@example.com'),
         ('F', 'Belo Horizonte', 'Brasil', 'Informações da Fernanda', 'senha789', 'fernanda@example.com');
 
-    -- Table for Login
-    CREATE TABLE IF NOT EXISTS login (
-        id_login INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-        password VARCHAR(255) NOT NULL,
-        email VARCHAR(255) NOT NULL
-    );
-
     -- Inserir dados mock para login
     INSERT INTO login (password, email) VALUES
-        ('senha123', 'maria@example.com'),
-        ('senha456', 'joao@example.com'),
-        ('senha789', 'fernanda@example.com');
+        ('senha123', 'm@example.com'),
+        ('senha456', 'j@example.com'),
+        ('senha789', 'f@example.com');
 
     -- Table for Setor
     CREATE TABLE IF NOT EXISTS setor (
@@ -237,8 +230,8 @@ create_school_db(){
     );
 
     INSERT INTO students (name, email, dob) VALUES
-        ('A', 'ana@example.com', '2005-04-15'),
-        ('C', 'carlos@example.com', '2006-07-22');
+        ('A', 'a@example.com', '2005-04-15'),
+        ('C', 'c@example.com', '2006-07-22');
 
     CREATE TABLE IF NOT EXISTS teachers (
         id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -292,8 +285,8 @@ create_hr_system_db(){
     );
 
     INSERT INTO employees (name, email, position, department_id, salary) VALUES
-        ('M', 'marcos@example.com', 'Desenvolvedor', 1, 4500.00),
-        ('J', 'julia@example.com', 'Gerente', 2, 8000.00);
+        ('M', 'm@example.com', 'Desenvolvedor', 1, 4500.00),
+        ('J', 'j@example.com', 'Gerente', 2, 8000.00);
 
     CREATE TABLE IF NOT EXISTS departments (
         id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
