@@ -31,5 +31,3 @@ O script oferece as seguintes opções para gerar arquivos Java automaticamente:
    - **JDBC** configurado para o banco de dados desejado (por exemplo, MySQL ou PostgreSQL).
    
 
-  interface teste1{} 
-  class teste7 implements teste1{}
