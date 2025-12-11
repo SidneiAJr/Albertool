@@ -94,6 +94,14 @@ São criados dados auxiliares:
 - Angular (CLI Oficial)
 - Nenhum outro frontend é criado nesta versão (React/Native removidos).
 
+## ⚠ Observação importante
+- Este software foi desenvolvido para ajudar outros desenvolvedores Web, de forma totalmente gratuita.
+- É expressamente proibido vender, revender, comercializar ou lucrar de qualquer forma com este conteúdo.
+
+## 🐞 Encontrou algum bug?
+- Se você achar qualquer erro, bug ou algo quebrado, por favor me avise!
+- Seu feedback ajuda a melhorar o projeto e manter tudo funcionando para todos. 🙏
+
 ## Script:
 ```bash
 #!/bin/bash
