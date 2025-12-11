@@ -105,9 +105,9 @@ create_banco_test(){
     );
     -- Inserir dados mock
     INSERT INTO teste1 (name, city, country, info) VALUES
-        ('Alice', 'São Paulo', 'Brasil', 'Informações da Alice'),
-        ('Bob', 'Rio de Janeiro', 'Brasil', 'Informações do Bob'),
-        ('Carlos', 'Curitiba', 'Brasil', 'Informações do Carlos');
+        ('A', 'São Paulo', 'Brasil', 'Informações da Alice'),
+        ('B', 'Rio de Janeiro', 'Brasil', 'Informações do Bob'),
+        ('C', 'Curitiba', 'Brasil', 'Informações do Carlos');
 EOF
 }
 
@@ -142,9 +142,9 @@ create_data_base_company(){
     );
     -- Inserir dados mock para usuários
     INSERT INTO user (name, city, country, info, password, email) VALUES
-        ('Maria', 'São Paulo', 'Brasil', 'Informações da Maria', 'senha123', 'maria@example.com'),
-        ('João', 'Salvador', 'Brasil', 'Informações do João', 'senha456', 'joao@example.com'),
-        ('Fernanda', 'Belo Horizonte', 'Brasil', 'Informações da Fernanda', 'senha789', 'fernanda@example.com');
+        ('M', 'São Paulo', 'Brasil', 'Informações da Maria', 'senha123', 'maria@example.com'),
+        ('J', 'Salvador', 'Brasil', 'Informações do João', 'senha456', 'joao@example.com'),
+        ('F', 'Belo Horizonte', 'Brasil', 'Informações da Fernanda', 'senha789', 'fernanda@example.com');
 
     -- Table for Login
     CREATE TABLE IF NOT EXISTS login (
@@ -237,8 +237,8 @@ create_school_db(){
     );
 
     INSERT INTO students (name, email, dob) VALUES
-        ('Ana', 'ana@example.com', '2005-04-15'),
-        ('Carlos', 'carlos@example.com', '2006-07-22');
+        ('A', 'ana@example.com', '2005-04-15'),
+        ('C', 'carlos@example.com', '2006-07-22');
 
     CREATE TABLE IF NOT EXISTS teachers (
         id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -248,8 +248,8 @@ create_school_db(){
     );
 
     INSERT INTO teachers (name, email, subject) VALUES
-        ('Professor João', 'joao@example.com', 'Matemática'),
-        ('Professor Maria', 'maria@example.com', 'História');
+        ('Professor J', 'joao@example.com', 'Matemática'),
+        ('Professor M', 'maria@example.com', 'História');
 
     CREATE TABLE IF NOT EXISTS subjects (
         id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -292,8 +292,8 @@ create_hr_system_db(){
     );
 
     INSERT INTO employees (name, email, position, department_id, salary) VALUES
-        ('Marcos', 'marcos@example.com', 'Desenvolvedor', 1, 4500.00),
-        ('Júlia', 'julia@example.com', 'Gerente', 2, 8000.00);
+        ('M', 'marcos@example.com', 'Desenvolvedor', 1, 4500.00),
+        ('J', 'julia@example.com', 'Gerente', 2, 8000.00);
 
     CREATE TABLE IF NOT EXISTS departments (
         id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -365,8 +365,8 @@ CREATE TABLE IF NOT EXISTS medications (
     description TEXT NOT NULL
 );
 INSERT INTO patients (name, dob, gender, contact_info) VALUES
-    ('Alice Souza', '1990-04-15', 'F', 'alice@example.com'),
-    ('José Santos', '1985-07-20', 'M', 'jose@example.com');
+    ('A', '1990-04-15', 'F', 'alice@example.com'),
+    ('J', '1985-07-20', 'M', 'jose@example.com');
 
 INSERT INTO doctors (name, specialty, contact_info) VALUES
     ('Dr. João Silva', 'Cardiologista', 'joao.silva@clinic.com'),
@@ -435,8 +435,8 @@ INSERT INTO books (title, author_id, category_id, publish_date, quantity) VALUES
     ('1984', 2, 1, '1949-06-08', 3);
 
 INSERT INTO members (name, email, phone, address) VALUES
-    ('Carlos Souza', 'carlos@example.com', '1234567890', 'Rua A, 123'),
-    ('Ana Pereira', 'ana@example.com', '0987654321', 'Rua B, 456');
+    ('C', 'carlos@example.com', '1234567890', 'Rua A, 123'),
+    ('A', 'ana@example.com', '0987654321', 'Rua B, 456');
 
 INSERT INTO loans (book_id, member_id, loan_date, return_date, status) VALUES
     (1, 1, '2025-12-01', '2025-12-15', 'borrowed'),
