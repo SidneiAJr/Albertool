@@ -255,7 +255,7 @@ cat <<EOF > $BASE/index.html
 </head>
 <body>
     <h1>$PROJ</h1>
-    <p>Bem-vindo ao seu portfólio gerado automaticamente!</p>
+    <p>Bem-vindo ao seu portfólio !</p>
 </body>
 </html>
 EOF
