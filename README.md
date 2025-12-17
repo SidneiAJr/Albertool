@@ -40,8 +40,6 @@ Simples. Funciona.
 ---
 
 ### 5️⃣ Seção: 🧠 Filosofia do Projeto (isso é ouro)
-Aqui tu se diferencia de 90% do GitHub:
-
 
 ## 🧠 Filosofia
 
