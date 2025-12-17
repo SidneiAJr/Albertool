@@ -54,7 +54,7 @@ Simples. Funciona.
 - As automações são voltadas para estudo, aprendizado e produtividade.
 - Sempre revise scripts antes de executar em produção.
 - Algumas automações podem sobrescrever arquivos.
-- Proibido Vender ou comercializar, dedicado a criação de Projetos
+- Proibida a venda ou comercialização. Projeto dedicado exclusivamente ao aprendizado e à criação de soluções.
 
 ## ☕ Apoie o projeto
 
