@@ -47,7 +47,7 @@ Simples. Funciona.
 - Documentação clara
 - Sem dependência de ferramentas pagas
 - Conhecimento livre
-- Conhecimento Livre e Não pago
+- Conhecimento Livre , Não Necessario Pagar...
 
 ## ⚠️ Aviso
 
