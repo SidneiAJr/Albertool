@@ -1,5 +1,112 @@
-# Automação | Checkdosguri
+# 🧪 CheckDosGuri
 
+**CheckDosGuri** é uma automação em **Bash** criada para ajudar desenvolvedores a entender rapidamente a estrutura e as dependências de um projeto.
+
+A ideia é simples: entrar em um projeto, rodar o script e ter um diagnóstico claro do que aquele repositório usa — linguagens, gerenciadores de dependência e ferramentas.
+
+> Projeto simples, direto e feito pra resolver problema real de dev.
+
+---
+
+## 🚀 O que o CheckDosGuri faz
+
+* 🔍 Detecta tecnologias do projeto a partir de arquivos comuns
+* 📦 Gera um log com dependências instaladas
+* 🧠 Ajuda a entender projetos novos ou legados rapidamente
+* 📄 Cria um relatório local sem alterar o projeto
+
+---
+
+## 🛠️ Tecnologias detectadas
+
+O script identifica automaticamente:
+
+* **Node.js** (`package.json`)
+* **PHP / Composer** (`composer.json`)
+* **Java**
+
+  * Maven (`pom.xml`)
+  * Gradle (`build.gradle`)
+* **Python** (`requirements.txt`)
+* **Docker** (`docker-compose.yml`)
+* **Git** (diretório `.git`)
+* **Variáveis de ambiente** (`.env.example`)
+
+---
+
+## 📁 Estrutura gerada
+
+Ao rodar o script, será criada a pasta:
+
+```bash
+CheckDosGuri/
+└── dependencias.log
+```
+
+Esse arquivo contém todas as informações detectadas no projeto.
+
+---
+
+
+
+
+
+
+## Use o menu interativo:
+
+```text
+1 | Checar Arquivos
+2 | Gerar Log de Dependências
+0 | Sair
+```
+
+---
+
+## 📄 Exemplo de saída
+
+```text
+✔ Node.js detectado (package.json)
+✔ Docker detectado
+✔ Repositório Git detectado
+
+[Node.js]
+express
+dotenv
+cors
+```
+
+---
+
+## 🎯 Quando usar
+
+* Entrou em um projeto novo e não sabe o stack
+* Projeto antigo sem documentação
+* Auditoria rápida de dependências
+* Padronização de automações locais
+
+---
+
+## 📚 Como Usar
+- Crie uma pasta no seu computador.
+- Dentro dela, crie um arquivo de texto comum.
+- Cole o script completo fornecido no GitHub.
+- Salve com a extensão:
+- setup.sh
+- Clique com botão direito → Executar com Git Bash
+- Escolha as opções no menu e deixe a CLI trabalhar sozinha.
+---
+
+## ☕ Apoio
+
+Se esse script te ajudou de alguma forma, considere apoiar com um café.
+Projeto open source, feito de dev pra dev.
+
+---
+
+## 📜 Licença
+
+Uso livre para fins educacionais e profissionais.
+É proibida a venda ou comercialização direta do script.
 
 
 ```bash
