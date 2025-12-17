@@ -34,7 +34,7 @@ Para executar corretamente:
 - Clique com botão direito → Executar com Git Bash
 - Escolha as opções no menu e deixe a CLI trabalhar sozinha.
 
-````
+````bash
 #!/bin/bash
 
 BASE_DIR="$(dirname "$(realpath "$0")")"
@@ -97,47 +97,6 @@ verificar_python() {
     fi
 }
 
-criar_relatorio() {
-    {
-        echo "===== RELATÓRIO DE AMBIENTE ====="
-        echo "Data: $(date)"
-        echo "--------------------------------"
-
-        echo "[Sistema]"
-        uname -a
-        echo "--------------------------------"
-
-        echo "[Node]"
-        verificar_node
-        verificar_versao_npm
-        echo "--------------------------------"
-
-        echo "[Java / .NET]"
-        verificar_versao_java
-        verificar_versao_cs
-        echo "--------------------------------"
-
-        echo "[Python]"
-        verificar_python
-        echo "--------------------------------"
-
-        echo "[Compiladores]"
-        verificar_versao_c
-        verificar_cpp
-        echo "--------------------------------"
-
-        echo "[DevOps]"
-        verificar_git
-        verificar_docker
-        echo "--------------------------------"
-
-        echo "[Banco de Dados]"
-        verificar_mysql
-        verificar_postgres
-    } > "$LOG_FILE"
-}
-
-
 verificar_node() {
     if comando_existe node; then
         echo "Node.js: $(node -v)"
@@ -182,9 +141,49 @@ verificar_cpp() {
     fi
 }
 
+criar_relatorio() {
+    {
+        echo "===== RELATÓRIO DE AMBIENTE ====="
+        echo "Data: $(date)"
+        echo "--------------------------------"
+
+        echo "[Sistema]"
+        uname -a
+        echo "--------------------------------"
+
+        echo "[Node]"
+        verificar_node
+        verificar_versao_npm
+        echo "--------------------------------"
+
+        echo "[Java / .NET]"
+        verificar_versao_java
+        verificar_versao_cs
+        echo "--------------------------------"
+
+        echo "[Python]"
+        verificar_python
+        echo "--------------------------------"
+
+        echo "[Compiladores]"
+        verificar_versao_c
+        verificar_cpp
+        echo "--------------------------------"
+
+        echo "[DevOps]"
+        verificar_git
+        verificar_docker
+        echo "--------------------------------"
+
+        echo "[Banco de Dados]"
+        verificar_mysql
+        verificar_postgres
+    } > "$LOG_FILE"
+}
 
 criar_relatorio
 
 echo "Relatório criado em: $LOG_FILE"
+
 
 ````
