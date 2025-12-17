@@ -13,6 +13,27 @@ Script em Bash para verificar e gerar relatório do ambiente de desenvolvimento.
 - Docker
 - MySQL / PostgreSQL
 
+## 📦 Requisitos
+
+Para executar corretamente:
+
+- ✔ Git instalado
+- ✔ Node.js instalado
+
+## 🙏 Agradecimento
+- Obrigado a todos os desenvolvedores que utilizam a Constellation Supreme CLI.
+- É simples, porém extremamente funcional e focada em produtividade.
+- Se possível, aceitei um café ☕ como forma de apoio — agradeço demais!
+
+## 📚 Como Usar
+- Crie uma pasta no seu computador.
+- Dentro dela, crie um arquivo de texto comum.
+- Cole o script completo fornecido no GitHub.
+- Salve com a extensão:
+- setup.sh
+- Clique com botão direito → Executar com Git Bash
+- Escolha as opções no menu e deixe a CLI trabalhar sozinha.
+
 ````
 #!/bin/bash
 
