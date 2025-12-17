@@ -1,8 +1,8 @@
 # 🚀 Constellation Supreme CLI — Documentação Oficial | Projeto Open Source
-Foco: Angular + Backend (JS/TS/PHP)
+Foco: Frontend + Backend (JS/TS/PHP)
 Criado no Brasil 🇧🇷 para o mundo.
 
-Bem-vindo à documentação técnica da Constellation Supreme CLI, uma ferramenta automatizada para criação rápida de estruturas profissionais de projetos Web utilizando Angular no frontend e JS, TS ou PHP no backend.
+Bem-vindo à documentação técnica da Constellation Supreme CLI, uma ferramenta automatizada para criação rápida de estruturas profissionais de projetos Web utilizando Angular no frontend | React No front e JS, TS ou PHP no backend.
 
 ## 📌 Sobre a Ferramenta
 
