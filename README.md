@@ -39,7 +39,6 @@ Simples. Funciona.
 
 ---
 
-### 5️⃣ Seção: 🧠 Filosofia do Projeto (isso é ouro)
 
 ## 🧠 Filosofia
 
