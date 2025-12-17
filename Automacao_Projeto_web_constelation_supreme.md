@@ -289,6 +289,8 @@ sub_menu_mvc() {
     echo "========= MVC ========="
     echo "1 | Backend JS + Angular"
     echo "2 | Backend TS + Angular"
+    echo "3 | Backend TS + React"
+    echo "4 | Backend JS + React"
     read -p "Escolha: " OPT_MVC
 }
 
@@ -352,6 +354,39 @@ install_dependencies_2(){
 # ================================
 # React Native (Expo)
 # ================================
+
+criar_react_vite_ts(){
+    echo "🅰 Criando React (Vite + TS)..."
+
+    cd "$FRONTEND_DIR" || exit 1
+
+    PROJECT_REACT="frontend-react-ts"
+
+    npm create vite@latest "$PROJECT_REACT" -- --template react-ts
+
+    cd "$PROJECT_REACT" || exit 1
+
+    npm install
+
+    echo "✅ React TS criado em: $FRONTEND_DIR/$PROJECT_REACT"
+}
+
+criar_react_native_vite_js(){
+    echo "🅰 Criando React (Vite + TS)..."
+
+    cd "$FRONTEND_DIR" || exit 1
+
+    PROJECT_REACT="frontend-react-ts"
+
+    npm create vite@latest "$PROJECT_REACT" -- --template react-ts
+
+    cd "$PROJECT_REACT" || exit 1
+
+    npm install
+
+    echo "✅ React TS criado em: $FRONTEND_DIR/$PROJECT_REACT"
+}
+
 
 cria_angular() {
     echo "🅰 Criando projeto Angular..."
@@ -507,31 +542,31 @@ cat <<EOF >"$FRONTEND_DIR/about.html"
 <body>
     <nav>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
         </ul>
     </nav>
 
     <main>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>Info</div>
+        <div>Info</div>
+        <div>Info</div>
+        <div>Info</div>
+        <div>Info</div>
+        <div>Info</div>
+        <div>Info</div>
     </main>
 
     <footer>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>Info</div>
+        <div>Info</div>
+        <div>Info</div>
     </footer>
 </body>
 </html>
@@ -549,14 +584,14 @@ cat <<EOF >"$FRONTEND_DIR/Products.html"
 <body>
     <nav>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
         </ul>
     </nav>
 
@@ -565,18 +600,18 @@ cat <<EOF >"$FRONTEND_DIR/Products.html"
 <nav></nav>
 
 <main>
-    <section id="products-list"></section>
+    <section id="products-list"Info></section>
 
-    <section id="product-form"></section>
+    <section id="product-form">Info</section>
 
-    <section id="product-details"></section>
+    <section id="product-details">Info</section>
 </main>
     </main>
 
     <footer>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>Info</div>
+        <div>Info</div>
+        <div>Info</div>
     </footer>
 </body>
 </html>
@@ -594,14 +629,14 @@ cat <<EOF >"$FRONTEND_DIR/Contact.html"
 <body>
     <nav>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
+            <li>Info</li>
         </ul>
     </nav>
 
@@ -615,9 +650,9 @@ cat <<EOF >"$FRONTEND_DIR/Contact.html"
     </main>
 
     <footer>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>Info</div>
+        <div>Info</div>
+        <div>Info</div>
     </footer>
 </body>
 </html>
@@ -697,11 +732,23 @@ case $OPT_MAIN in
     create_doc
       ;;
       2)
-        create_base_folders
+    create_base_folders
     backend_ts
     cria_angular
     create_doc
       ;;
+      3)
+    create_base_folders
+    backend_ts
+    create_doc
+    criar_react_vite_ts
+    ;;
+    4)
+    create_base_folders
+    backend_js
+    create_doc
+    criar_react_native_vite_js
+     ;;
       *)
         echo "Opção inválida no menu MVC"
       ;;
