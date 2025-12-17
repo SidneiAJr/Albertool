@@ -52,4 +52,12 @@ Aqui tu se diferencia de 90% do GitHub:
 - Conhecimento livre
 - Conhecimento Livre e Não pago
 
+## ⚠️ Aviso
+
+- As automações são voltadas para estudo, aprendizado e produtividade.
+- Sempre revise scripts antes de executar em produção.
+- Algumas automações podem sobrescrever arquivos.
+- Proibido Vender ou comercializar, dedicado a criação de Projetos
+
+
 
