@@ -1,4 +1,4 @@
-# 🚀 Constellation Supreme CLI — Documentação Oficial
+# 🚀 Constellation Supreme CLI — Documentação Oficial | Projeto Open Source
 Foco: Angular + Backend (JS/TS/PHP)
 Criado no Brasil 🇧🇷 para o mundo.
 
