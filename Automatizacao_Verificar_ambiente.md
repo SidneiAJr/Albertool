@@ -1,6 +1,6 @@
 # Não Usar em contrução:
 
-
+````
 echo =================================
 echo Verificar de Ambiente 
 echo =================================
@@ -17,3 +17,4 @@ verificar_ambiente_cs(){
 verificar_ambiente_c(){
     npm -v
 }
+````
