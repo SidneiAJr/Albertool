@@ -108,6 +108,7 @@ Projeto open source, feito de dev pra dev.
 Uso livre para fins educacionais e profissionais.
 É proibida a venda ou comercialização direta do script.
 
+---
 
 ```bash
 #!/bin/bash
