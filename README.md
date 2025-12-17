@@ -59,5 +59,12 @@ Aqui tu se diferencia de 90% do GitHub:
 - Algumas automações podem sobrescrever arquivos.
 - Proibido Vender ou comercializar, dedicado a criação de Projetos
 
+## ☕ Apoie o projeto
+
+Se esse repositório te ajudou de alguma forma:
+- Compartilhe
+- Use
+- Estude
+- Ou pague um café ☕ (se quiser)
 
 
