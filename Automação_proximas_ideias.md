@@ -4,4 +4,4 @@
 - Checker de ambiente verifica se esta instalado
 - Seeder automático
 - Gerador .gitignore
-- 
+
