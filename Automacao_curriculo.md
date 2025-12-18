@@ -2,7 +2,7 @@
 
 Gerador simples de **currículo** e **mensagens para LinkedIn** via terminal.
 
-Sem frescura. Sem promessa. Só o necessário.
+Sem frescura.  Só o necessário.
 
 ---
 
