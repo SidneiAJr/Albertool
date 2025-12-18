@@ -28,12 +28,17 @@ Para executar corretamente:
 ## 📚 Como Usar
 - Crie uma pasta no seu computador.
 - Dentro dela, crie um arquivo de texto comum.
-- Cole o script completo fornecido no GitHub.
+- Cole o script completo fornecido na seção [setup.sh](#setupsh).
 - Salve com a extensão:
 - setup.sh
+- Crie também um arquivo texto comum
+- Cole o script completo fornecido no seção [comandos.list](#comandoslist).
+- Salve com a extensão:
+- comandos.list
 - Clique com botão direito → Executar com Git Bash
 - Escolha as opções no menu e deixe a CLI trabalhar sozinha.
 
+### setup.sh
 ````bash
 #!/bin/bash
 
@@ -49,96 +54,51 @@ comando_existe() {
     command -v "$1" >/dev/null 2>&1
 }
 
-verificar_versao_npm() {
-    if comando_existe npm; then
-        echo "NPM: $(npm -v)"
-    else
-        echo "NPM não instalado"
-    fi
-}
+verificar_comandos() {
+    local lista="$BASE_DIR/comandos.list"
 
-verificar_versao_java() {
-    if comando_existe java; then
-        java -version 2>&1 | head -n 1
-    else
-        echo "Java não instalado"
-    fi
-}
-
-verificar_versao_cs() {
-    if comando_existe dotnet; then
-        echo ".NET SDK: $(dotnet --version)"
-    else
-        echo ".NET SDK não instalado"
-    fi
-}
-
-verificar_versao_c() {
-    if comando_existe gcc; then
-        gcc --version | head -n 1
-    elif comando_existe clang; then
-        clang --version | head -n 1
-    else
-        echo "Compilador C não encontrado"
-    fi
-}
-
-verificar_python() {
-    if comando_existe python3; then
-        echo "Python: $(python3 --version)"
-    else
-        echo "Python não instalado"
+    if [ ! -f "$lista" ]; then
+        echo "Arquivo comandos.list não encontrado em $BASE_DIR"
+        return
     fi
 
-    if comando_existe pip3; then
-        echo "Pip: $(pip3 --version | cut -d' ' -f1,2)"
-    else
-        echo "Pip não instalado"
-    fi
-}
+    while IFS= read -r linha || [ -n "$linha" ]; do
+        # Ignora linhas vazias
+        [ -z "$linha" ] && continue
 
-verificar_node() {
-    if comando_existe node; then
-        echo "Node.js: $(node -v)"
-    else
-        echo "Node.js não instalado"
-    fi
-}
+        # Separa parte antes e depois de "="
+        local nome_label="${linha%%=*}"
+        local comando="${linha#*=}"
 
-verificar_git() {
-    if comando_existe git; then
-        echo "Git: $(git --version)"
-    else
-        echo "Git não instalado"
-    fi
-}
-verificar_docker() {
-    if comando_existe docker; then
-        echo "Docker: $(docker --version)"
-    else
-        echo "Docker não instalado"
-    fi
-}
-verificar_mysql() {
-    if comando_existe mysql; then
-        echo "MySQL: $(mysql --version)"
-    else
-        echo "MySQL não instalado"
-    fi
-}
-verificar_postgres() {
-    if comando_existe psql; then
-        echo "PostgreSQL: $(psql --version)"
-    else
-        echo "PostgreSQL não instalado"
-    fi
-}
-verificar_cpp() {
-    if comando_existe g++; then
-        echo "G++: $(g++ --version | head -n 1)"
-    else
-        echo "G++ não instalado"
-    fi
+        # Extrai label entre colchetes, se existir; senão usa o identificador
+        local identificador="${nome_label%%[*}"
+        local label="${nome_label#*[}"
+        if [ "$label" = "$nome_label" ]; then
+            label="$identificador"
+        else
+            label="${label%]}"
+        fi
+
+        # Remove espaços extras do comando
+        comando="$(echo "$comando" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')"
+
+        # Pega apenas o binário principal para testar se existe
+        local binario="${comando%% *}"
+        if [ -z "$binario" ]; then
+            echo "$label sem comando configurado"
+            continue
+        fi
+
+        echo "[$label]"
+        if comando_existe "$binario"; then
+            local saida
+            saida=$($comando 2>&1 | head -n 1)
+            echo "$saida"
+        else
+            echo "$label não instalado"
+        fi
+        echo "-------------------"
+    done < "$lista"
 }
 
 criar_relatorio() {
@@ -151,39 +111,28 @@ criar_relatorio() {
         uname -a
         echo "--------------------------------"
 
-        echo "[Node]"
-        verificar_node
-        verificar_versao_npm
-        echo "--------------------------------"
-
-        echo "[Java / .NET]"
-        verificar_versao_java
-        verificar_versao_cs
-        echo "--------------------------------"
-
-        echo "[Python]"
-        verificar_python
-        echo "--------------------------------"
-
-        echo "[Compiladores]"
-        verificar_versao_c
-        verificar_cpp
-        echo "--------------------------------"
-
-        echo "[DevOps]"
-        verificar_git
-        verificar_docker
-        echo "--------------------------------"
-
-        echo "[Banco de Dados]"
-        verificar_mysql
-        verificar_postgres
+        verificar_comandos
     } > "$LOG_FILE"
 }
 
 criar_relatorio
 
 echo "Relatório criado em: $LOG_FILE"
+````
 
-
+### comandos.list
+````bash
+NPM[NPM]=npm -v
+JAVA[Java]=java -version
+DOTNET[.NET SDK]=dotnet --version
+GCC[Compilador C GCC]=gcc --version
+GPP[Compilador C GPP]=g++ --version
+CLANG=clang --version
+PYTHON[Python]=python3 --version
+PIP[PIP]=pip3 --version
+NODE[Node.js]=node -v
+GIT[GIT]=git --version
+DOCKER[Docker]=docker --version
+MYSQL[MySQL]=mysql --version
+POSTGRES[PostgreSQL]=psql --version
 ````
