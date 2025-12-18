@@ -67,11 +67,29 @@ Escolha a opção desejada no menu:
 
 ---
 
-## 🚧 Status do Projeto
+## 📚 Como Usar
+- Crie uma pasta no seu computador.
+- Dentro dela, crie um arquivo de texto comum.
+- Cole o script completo fornecido no GitHub.
+- Salve com a extensão:
+- setup.sh
+- Clique com botão direito → Executar com Git Bash
+- Escolha as opções no menu e deixe a CLI trabalhar sozinha.
+---
 
-🟡 Em construção
+## ☕ Apoio
 
-Ideia simples, funcional e aberta a melhorias.
+Se esse script te ajudou de alguma forma, considere apoiar com um café.
+Projeto open source, feito de dev pra dev.
+
+---
+
+## 📜 Licença
+
+Uso livre para fins educacionais e profissionais.
+É proibida a venda ou comercialização direta do script.
+
+---
 
 ---
 
