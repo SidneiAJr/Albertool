@@ -91,7 +91,6 @@ Uso livre para fins educacionais e profissionais.
 
 ---
 
----
 
 ```bash
 echo "=========================="
