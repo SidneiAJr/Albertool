@@ -30,11 +30,15 @@ O foco é **automatizar governança e documentação**, algo comum em ambientes 
 ---
 
 🖥️ Como usar?
+
 1️⃣ Crie um arquivo de texto
+
 2️⃣ Cole o código acima
+
 3️⃣ Salve como:
 
 gerar_si.bat
+
 4️⃣ Dê dois cliques no arquivo
 
 
