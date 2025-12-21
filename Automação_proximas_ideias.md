@@ -1,2 +1,0 @@
-# Automação | Proximas Ideias Futuras
-
