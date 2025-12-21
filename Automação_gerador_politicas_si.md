@@ -1,4 +1,4 @@
-# Automação | Gerador de Politicas SI:
+# 🛡️Automação | Gerador de Politicas SI:
 
 Este projeto é um **script em Bash** que automatiza a criação de **políticas de Segurança da Informação em formato Markdown**, organizadas em diretórios prontos para uso como documentação interna, wiki corporativa ou base de conhecimento.
 
