@@ -28,9 +28,8 @@
 ```bash
 Automacao/
 ├── infra/                # Infraestrutura e setup
-├── geradores/            # Geradores de código e projetos
-├── projetos_prontos/     # Templates completos
-├── linguagens/           # Automação por linguagem
+├── Web/                  # Geradores de código e projetos    
+├── Projetos /           # Automação por linguagem
 └── README.md
 ```
 
