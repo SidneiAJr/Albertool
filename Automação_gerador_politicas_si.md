@@ -29,7 +29,7 @@ O foco é **automatizar governança e documentação**, algo comum em ambientes 
 
 ---
 
-🖥️ Como usar?
+## 🖥️ Como usar?
 
 1️⃣ Crie um arquivo de texto
 
