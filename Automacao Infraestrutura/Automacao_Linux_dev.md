@@ -42,29 +42,17 @@ O script oferece quatro perfis de instalação:
 ## 📂 Estrutura do Script
 ```bash
 check_root: garante que o script rode como root.
-
-- update_system: atualiza o sistema.
-
- install_base_tools: instala ferramentas essenciais.
-
+update_system: atualiza o sistema.
+install_base_tools: instala ferramentas essenciais.
 install_python_base & install_python_pip_packages: instala Python e pacotes comuns.
-
 install_java_base: instala Java (OpenJDK 17).
-
 install_php_base: instala PHP e extensões.
-
 install_nodejs: instala Node.js e npm.
-
 install_postgresql_tools / install_mariadb: instala bancos de dados.
-
 install_docker: instala Docker e Docker Compose.
-
 install_security_tools: instala ferramentas de rede e segurança.
-
 install_vscode: instala VSCode via repositório oficial da Microsoft.
-
 Perfis (profile_student, profile_dev_web, etc.) combinam os módulos acima.
-
 log_install: registra logs da instalação em /var/log/dev-installer.
 ```
 
