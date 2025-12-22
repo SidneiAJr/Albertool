@@ -1,5 +1,6 @@
 # Automação | Construcao
 
+
 ```bash
 #!/bin/bash
 
@@ -43,6 +44,29 @@ install_python_base() {
         flake8 \
         pytest
 }
+
+install_python_pip_packages() {
+    echo "Criando ambiente virtual Python..."
+
+    PY_ENV="/home/$SUDO_USER/.venvs/python"
+
+    mkdir -p "$(dirname "$PY_ENV")"
+    python3 -m venv "$PY_ENV"
+
+    "$PY_ENV/bin/python" -m pip install --upgrade pip
+
+    "$PY_ENV/bin/python" -m pip install \
+        pandas numpy matplotlib seaborn \
+        mysql-connector-python psycopg2-binary \
+        black isort mypy \
+        requests httpx beautifulsoup4 lxml \
+        fastapi uvicorn flask \
+        sqlalchemy alembic pydantic python-dotenv \
+        typer click rich schedule watchdog \
+        paramiko fabric
+        
+}
+
 
 # ============================
 # JAVA
@@ -91,6 +115,10 @@ install_postgresql_tools() {
     apt install -y \
         postgresql \
         postgresql-contrib
+}
+
+install_mariadb() {
+    apt install -y mariadb-server mariadb-client
 }
 
 # ============================
@@ -156,7 +184,7 @@ profile_dev_web() {
     install_base_tools
     install_php_base
     install_nodejs
-    install_mysql_tools
+    install_mariadb
     install_vscode
 }
 
@@ -210,6 +238,6 @@ main_menu() {
 
 check_root
 main_menu
-
+```
 
 
