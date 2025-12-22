@@ -68,6 +68,10 @@ Perfis (profile_student, profile_dev_web, etc.) combinam os módulos acima.
 log_install: registra logs da instalação em /var/log/dev-installer.
 ```
 
+## 📝 Observações
+
+Script testado em Linux Mint XFCE recentes.
+
 ## Script:
 
 ```bash
