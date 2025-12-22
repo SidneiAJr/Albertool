@@ -56,6 +56,16 @@ Perfis (profile_student, profile_dev_web, etc.) combinam os módulos acima.
 log_install: registra logs da instalação em /var/log/dev-installer.
 ```
 
+### 📚 Como Usar
+- Crie uma pasta no seu computador.
+- Dentro dela, crie um arquivo de texto comum.
+- Cole o script completo fornecido no GitHub.
+- Salve com a extensão:
+- setup.sh
+- Clique com botão direito → Executar com Git Bash
+- Escolha as opções no menu e deixe a CLI trabalhar sozinha.
+
+
 ## 📝 Observações
 
 Script testado em Linux Mint XFCE recentes.
