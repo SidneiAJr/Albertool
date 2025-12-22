@@ -64,7 +64,7 @@ install_python_pip_packages() {
         sqlalchemy alembic pydantic python-dotenv \
         typer click rich schedule watchdog \
         paramiko fabric
-        
+
 }
 
 
@@ -156,17 +156,32 @@ sudo apt install code -y
 
 }
 
+install_snap_if_missing() {
+    if ! command -v snap &> /dev/null; then
+        echo "Snap não encontrado, instalando..."
+        apt update
+        apt install -y snapd
+        systemctl enable --now snapd.socket
+    fi
+}
+
 install_pycharm() {
+    install_snap_if_missing
     snap install pycharm-community --classic
 }
 
 install_intellij() {
+    install_snap_if_missing
     snap install intellij-idea-community --classic
 }
 
+
 install_netbeans() {
-    apt install -y netbeans
+    wget https://downloads.apache.org/netbeans/netbeans/22/Apache-NetBeans-17-bin-linux-x64.sh -O /tmp/netbeans.sh
+    chmod +x /tmp/netbeans.sh
+    /tmp/netbeans.sh --silent
 }
+
 
 # ============================
 # PROFILES
@@ -177,6 +192,8 @@ profile_student() {
     install_base_tools
     install_python_base
     install_vscode
+    install_python_pip_packages
+    log_install
 }
 
 profile_dev_web() {
@@ -186,6 +203,7 @@ profile_dev_web() {
     install_nodejs
     install_mariadb
     install_vscode
+    log_install
 }
 
 profile_backend() {
@@ -194,9 +212,9 @@ profile_backend() {
     install_java_base
     install_python_base
     install_postgresql_tools
-    install_xampp
     install_docker
     install_intellij
+    log_install
 }
 
 profile_security() {
@@ -204,6 +222,24 @@ profile_security() {
     install_base_tools
     install_security_tools
 }
+
+log_install() {
+    LOG_DIR="/var/log/dev-installer"
+    LOG_FILE="$LOG_DIR/install_$(date +%Y-%m-%d_%H-%M-%S).log"
+
+    mkdir -p "$LOG_DIR"
+
+    echo "====================================" >> "$LOG_FILE"
+    echo " Dev Installer Log" >> "$LOG_FILE"
+    echo " Data: $(date)" >> "$LOG_FILE"
+    echo " Usuário: $SUDO_USER" >> "$LOG_FILE"
+    echo " Host: $(hostname)" >> "$LOG_FILE"
+    echo " Sistema: $(lsb_release -ds 2>/dev/null || cat /etc/os-release | head -n1)" >> "$LOG_FILE"
+    echo "====================================" >> "$LOG_FILE"
+
+    exec > >(tee -a "$LOG_FILE") 2>&1
+}
+
 
 # ============================
 # MENUS
@@ -238,6 +274,7 @@ main_menu() {
 
 check_root
 main_menu
+
 ```
 
 
