@@ -1,4 +1,4 @@
-# Debian Dev Installer
+# Automação | Debian Dev Installer
 
 Um script Bash para automatizar a instalação de ambientes de desenvolvimento no Debian/Ubuntu.  
 Inclui Python, Java, PHP, Node.js, bancos de dados, Docker, ferramentas de segurança e IDEs básicas.
