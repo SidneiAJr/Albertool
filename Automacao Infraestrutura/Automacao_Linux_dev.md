@@ -162,8 +162,11 @@ install_snap_if_missing() {
         apt update
         apt install -y snapd
         systemctl enable --now snapd.socket
+        snap install core
+        snap refresh core
     fi
 }
+
 
 install_pycharm() {
     install_snap_if_missing
@@ -274,6 +277,7 @@ main_menu() {
 
 check_root
 main_menu
+
 
 ```
 
