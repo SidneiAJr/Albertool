@@ -1,5 +1,74 @@
-# Automação | Construcao
+# Debian Dev Installer
 
+Um script Bash para automatizar a instalação de ambientes de desenvolvimento no Debian/Ubuntu.  
+Inclui Python, Java, PHP, Node.js, bancos de dados, Docker, ferramentas de segurança e IDEs básicas.
+
+---
+
+## 📌 Funcionalidades
+
+- **Core Tools**: curl, wget, git, unzip, htop, entre outros.
+- **Python**: Python 3, pip, venv, Tkinter, Pygame, flake8, pytest.
+- **Python Packages**: pandas, numpy, matplotlib, seaborn, requests, fastapi, Flask, SQLAlchemy, entre outros.
+- **Java**: OpenJDK 17.
+- **PHP**: PHP CLI, extensões MySQL, cURL, XML, Mbstring.
+- **Node.js & NPM**: instalação via repositório Debian.
+- **Databases**: PostgreSQL, MariaDB.
+- **Containers**: Docker + Docker Compose.
+- **Security Tools**: nmap, tcpdump, wireshark, net-tools.
+- **IDE**: VSCode.
+- **Perfis de instalação**: Student, Dev Web, Backend, Security.
+
+---
+
+## 🛠 Perfis de instalação
+
+O script oferece quatro perfis de instalação:
+
+1. **Student**  
+   Instala ferramentas básicas, Python e VSCode, além de pacotes Python via pip.
+
+2. **Dev Web**  
+   Instala PHP, Node.js, MariaDB, VSCode e ferramentas básicas.
+
+3. **Backend**  
+   Instala Java, Python, PostgreSQL, Docker e ferramentas básicas.
+
+4. **Security**  
+   Instala apenas ferramentas básicas e de segurança.
+
+---
+
+## 📂 Estrutura do Script
+```bash
+check_root: garante que o script rode como root.
+
+update_system: atualiza o sistema.
+
+install_base_tools: instala ferramentas essenciais.
+
+install_python_base & install_python_pip_packages: instala Python e pacotes comuns.
+
+install_java_base: instala Java (OpenJDK 17).
+
+install_php_base: instala PHP e extensões.
+
+install_nodejs: instala Node.js e npm.
+
+install_postgresql_tools / install_mariadb: instala bancos de dados.
+
+install_docker: instala Docker e Docker Compose.
+
+install_security_tools: instala ferramentas de rede e segurança.
+
+install_vscode: instala VSCode via repositório oficial da Microsoft.
+
+Perfis (profile_student, profile_dev_web, etc.) combinam os módulos acima.
+
+log_install: registra logs da instalação em /var/log/dev-installer.
+```
+
+## Script:
 
 ```bash
 #!/bin/bash
