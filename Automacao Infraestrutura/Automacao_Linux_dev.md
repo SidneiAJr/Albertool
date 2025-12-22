@@ -43,9 +43,9 @@ O script oferece quatro perfis de instalação:
 ```bash
 check_root: garante que o script rode como root.
 
-update_system: atualiza o sistema.
+- update_system: atualiza o sistema.
 
-install_base_tools: instala ferramentas essenciais.
+ install_base_tools: instala ferramentas essenciais.
 
 install_python_base & install_python_pip_packages: instala Python e pacotes comuns.
 
