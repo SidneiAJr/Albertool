@@ -1,7 +1,6 @@
 # Automação | Construcao
 
 ```bash
-
 #!/bin/bash
 
 # ============================
@@ -79,11 +78,13 @@ install_nodejs() {
 # DATABASES
 # ============================
 
-install_mysql_tools() {
-    apt install -y \
-        mysql-server \
-        mysql-client \
-        mysql-workbench
+install_xampp() {
+    echo "Instalando XAMPP..."
+
+    wget -O /tmp/xampp-installer.run https://www.apachefriends.org/xampp-files/8.2.12/xampp-linux-x64-8.2.12-0-installer.run
+
+    chmod +x /tmp/xampp-installer.run
+    sudo /tmp/xampp-installer.run
 }
 
 install_postgresql_tools() {
@@ -165,6 +166,7 @@ profile_backend() {
     install_java_base
     install_python_base
     install_postgresql_tools
+    install_xampp
     install_docker
     install_intellij
 }
@@ -210,4 +212,4 @@ check_root
 main_menu
 
 
-````
+
